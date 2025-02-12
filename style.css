@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search & Filter Section */
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Employee List Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Export Button */
+#exportBtn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ffc107;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#exportBtn:hover {
+    background: #e0a800;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 20px;
+}
