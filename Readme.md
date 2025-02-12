@@ -30,8 +30,7 @@ Employee-Management-System/
 │-- README.md          # Project documentation
     
     
-    <h2>Setup and Usage1.
-    <ol>
+    
     1.Download or clone this repository.1.
     2.Open <code>index.html</code> in a web browser.1.
     3.Use the form to add employees.1.
