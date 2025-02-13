@@ -29,6 +29,10 @@ function displayEmployees() {
 }
 
 function addEmployee(employee) {
+    if (employees.some(emp => emp.email === employee.email)) {
+        alert('Email already exists! Please use a unique email.');
+        return;
+    }
     employee.id = Date.now();
     employees.push(employee);
     saveEmployees();
@@ -38,6 +42,10 @@ function addEmployee(employee) {
 function updateEmployee(updatedEmployee) {
     const index = employees.findIndex(emp => emp.id === parseInt(updatedEmployee.id));
     if (index !== -1) {
+        if (employees.some(emp => emp.email === updatedEmployee.email && emp.id !== updatedEmployee.id)) {
+            alert('Email already exists! Please use a unique email.');
+            return;
+        }
         employees[index] = {...employees[index], ...updatedEmployee};
         saveEmployees();
         displayEmployees();
