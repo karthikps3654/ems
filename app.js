@@ -42,7 +42,7 @@ function addEmployee(employee) {
 function updateEmployee(updatedEmployee) {
     const index = employees.findIndex(emp => emp.id === parseInt(updatedEmployee.id));
     if (index !== -1) {
-        if (employees.some(emp => emp.email === updatedEmployee.email && emp.id !== updatedEmployee.id)) {
+        if (employees.some(emp => emp.email === updatedEmployee.email && emp.id !== parseInt(updatedEmployee.id))) {
             alert('Email already exists! Please use a unique email.');
             return;
         }
@@ -51,6 +51,7 @@ function updateEmployee(updatedEmployee) {
         displayEmployees();
     }
 }
+
 
 function deleteEmployee(id) {
     if (confirm('Are you sure you want to delete this employee?')) {
